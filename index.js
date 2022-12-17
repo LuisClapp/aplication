@@ -1,4 +1,5 @@
 const questions = [
+    "Qual o seu nome?",
     "O que fiz hoje?",
     "O que aprendi hoje?",
     "O que te deixou aborrecido hoje? Conte mais...",
@@ -25,22 +26,22 @@ process.stdin.on("data", data =>{
 
 process.on("exit", () => {
     console.log(`
-    Legal Luís!
+    Legal ${answers[0]}!
     
     Hoje você fez:
-    ${answers[0]}
-    
-    Hoje você aprendeu:
     ${answers[1]}
     
-    Isso lhe aborreceu:
+    Hoje você aprendeu:
     ${answers[2]}
     
-    Você fez isso para melhorar:
+    Isso lhe aborreceu:
     ${answers[3]}
     
-    Isso lhe deixou feliz hoje:
+    Você fez isso para melhorar:
     ${answers[4]}
+    
+    Isso lhe deixou feliz hoje:
+    ${answers[5]}
     
     Volte amanhã para mais reflexões!`)
 });
